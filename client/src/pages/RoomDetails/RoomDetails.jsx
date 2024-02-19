@@ -3,6 +3,8 @@ import Container from "../../components/Shared/Container";
 import { useEffect, useState } from "react";
 import Loader from "../../components/Shared/Loader";
 import { Helmet } from "react-helmet-async";
+import Header from "../../components/RoomDetails/Header";
+
 
 
 const RoomDetails = () => {
@@ -32,6 +34,7 @@ const RoomDetails = () => {
             <div className="">
                 <div>
                     {/* header section */}
+                    <Header room={room}/>
                 </div>
                 <div>
                     {/* Room Info */}
